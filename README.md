@@ -11,9 +11,11 @@
 
 ### 2. Expliquer les 2 modes de fonctionnement
 ```
-Dans le premier chronogramme, le processeur utilise le forwarding et fait donc aucun arrêt car tous les aléas peuvent être réglés grâce aux registres intermédiaires.
+Dans le premier chronogramme, le processeur utilise le forwarding et fait donc aucun arrêt 
+car tous les aléas peuvent être réglés grâce aux registres intermédiaires.
 
-Dans le deuxième chronogramme le processeur n'a pas de forwarding est doit régulièrement faire des arrêts pour éviter des problèmes liés aux aléas.
+Dans le deuxième chronogramme le processeur n'a pas de forwarding est doit régulièrement 
+faire des arrêts pour éviter des problèmes liés aux aléas.
 ```
 
 ### 3. Utiliser le mode avec la valeur de la constante =1 et tracer le chonogramme de l’éxecution du programme (03_main.S).
@@ -25,7 +27,8 @@ Car avec les étapes:
 	LDRH r1, [r2, #4]
 	add r1,#0x10
 
-Il y a des accès à la mémoire et si le programme ne s'arrête pas les deux ne peuvent pas se faire correctement l'une après l'autre.
+Il y a des accès à la mémoire et si le programme ne s'arrête pas les deux ne peuvent pas 
+se faire correctement l'une après l'autre.
 ```
 
 ### 5. Lors de la détection pour le forwarding, quel est l’utilité du signal sel_mem_i dans la détection ? Pourquoi ce signal est utile ?
