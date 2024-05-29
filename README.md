@@ -32,13 +32,34 @@ se faire correctement l'une après l'autre.
 ```
 
 ### 5. Lors de la détection pour le forwarding, quel est l’utilité du signal sel_mem_i dans la détection ? Pourquoi ce signal est utile ?
+```
+Son utilité est de définir si l'instruction en cours nécessite un accès à la mémoire.
+Celui-ci est utile pour savoir quel type d'aléa nous traitons et donc quel type
+de forwarding effectuer.
+```
 
 ### 6. Est-il nécessaire de faire un data forwarding depuis le stage WRITE_BACK et pourquoi ?
+```
+Il peut être nécessaire ou plutôt utile car si nous le faisons, 
+nous pouvons economiser un cycle qui serait utilisé pour écrire les valeurs dans les registres.
+```
 
 ### 7. Quelles sont les conditions pour que le forwarding puisse avoir lieu ?
+```
+
+```
 
 ### 8. Quelles sont les avantages et inconvénients du forwarding sur la gestion des aléas de données?
+```
+
+```
 
 ### 9. Que permet de réaliser les signaux sel_opX_forward_s dans le circuit Execute ?
+```
+
+```
 
 ### 10. Dans le circuit Execute, pourquoi il y a un registre connecté à l’entrée memory_data_out_i?
+```
+
+```
