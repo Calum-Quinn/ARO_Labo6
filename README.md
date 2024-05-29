@@ -46,20 +46,25 @@ nous pouvons economiser un cycle qui serait utilisé pour écrire les valeurs da
 
 ### 7. Quelles sont les conditions pour que le forwarding puisse avoir lieu ?
 ```
-
+Il faut que la ou les valeurs nécessaires soit actuellement dans les registres de forwarding (E, F1, F2, M).
 ```
 
 ### 8. Quelles sont les avantages et inconvénients du forwarding sur la gestion des aléas de données?
 ```
+Les avantages sont principalements dans l'économisation de temps et donc l'augmentation de l'efficacité générale du processeur.
 
+Il y a très peu d'inconvénients en ce qui concerne le forwarding mais il y a plus d'étapes 
+dans notre processeur donc il est légèrement plus complexe.
 ```
 
 ### 9. Que permet de réaliser les signaux sel_opX_forward_s dans le circuit Execute ?
 ```
-
+Ils permettent de sélectionner la valeur nécessaire dans les registres du forwarding 
+ou ne pas les utiliser dans le cas où le forwarding n'est pas nécessaire.
 ```
 
 ### 10. Dans le circuit Execute, pourquoi il y a un registre connecté à l’entrée memory_data_out_i?
 ```
-
+Ceci est le registre M depuis lequel on prend la valeur quand on utilise le forwarding 
+avec une opération qui accède à la mémoire.
 ```
